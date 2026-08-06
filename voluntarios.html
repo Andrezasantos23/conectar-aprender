@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <title> Conectar & Aprender - Voluntários</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <h2><a href="index.html" class="logo">💡 Conectar & Aprender</a></h2>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="index.html#cursos">Cursos</a>
+                <a href="voluntarios.html" class="ativo">Voluntários</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+<!-- voluntário -->
+
+    <section class="voluntarios-section">
+        <div class="container">
+            <h2>Voluntários</h2>
+            <p class="subtitulo">Conheça os parceiros incríveis que fazem este projeto acontecer</p>
+
+            <div class="voluntarios-grid">
+                <div class="voluntario-card">
+                    <div class="foto-container">
+                        <img src="miguel.png" alt="Miguel Santana">
+                    </div>
+                    <h3>Miguel Santana</h3>
+                    <span class="cargo">Desenvolvedor Back-End, professor aposentado</span>
+                    <p>"Acredito que conhecimento compartilhado tem o poder de transformar histórias."</p>
+                </div>
+
+                <div class="voluntario-card">
+                    <div class="foto-container">
+                        <img src="bruno.png" alt="Bruno Sato">
+                    </div>
+                    <h3>Bruno Sato</h3>
+                    <span class="cargo">Bacharel em Ciência da Computação</span>
+                    <p>"Transformo o conhecimento que adquiri na faculdade em oportunidades de aprendizado para novos estudantes de tecnologia."</p>
+                </div>
+
+                <div class="voluntario-card">
+                    <div class="foto-container">
+                        <img src="maria.png" alt="Maria Lucia Silva">
+                    </div>
+                    <h3>Maria Lucia Silva</h3>
+                    <span class="cargo">Engenheira de Software, professora</span>
+                    <p>"Vejo a tecnologia como uma ponte capaz de conectar pessoas, ampliar oportunidades e promover inclusão social."</p>
+                </div>
+
+                <div class="voluntario-card">
+                    <div class="foto-container">
+                        <img src="bia.png" alt="BiBi Santos">
+                    </div>
+                    <h3>Beatriz "BiBi" Santos</h3>
+                    <span class="cargo">Estudante do ensino médio, com grande curiosidade por Tech</span>
+                    <p>"Minha paixão por esse projeto começou ao ajudar meus familiares com coisas básicas, ali percebi que o que parece fácil pra mim, ainda era um desafio pra muita gente. Resolvi compartilhar o que sei e aprender com as experiências."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- aba de form para voluntariado -->
+    <section class="contato-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <h3>Se junte ao nosso time de voluntários!💡</h3>
+                <p class="subtitulo" style="margin-bottom: 20px;">Preencha o formulário para fazer parte da equipe.</p>
+                
+                <form id="form-voluntario" class="form-contato">
+                    <div class="campo">
+                        <label for="nome-vol">Nome:</label>
+                        <input type="text" id="nome-vol" required placeholder="Digite seu nome completo">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email-vol">E-mail:</label>
+                        <input type="email" id="email-vol" required placeholder="joão@exemplo.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="area-vol">Área de conhecimento:</label>
+                        <input type="text" id="area-vol" required placeholder="Desenvolvimento, informática básica, marketing, redes sociais...">
+                    </div>
+
+                    <div class="campo">
+                        <label for="msg-vol">Por que você gostaria de se juntar ao nosso time?</label>
+                        <textarea id="msg-vol" rows="4" required placeholder="Conte um pouco sobre sua história..."></textarea>
+                    </div>
+
+                    <button type="submit" class="botao botao-enviar">Quero fazer parte do time</button>
+                </form>
+                <div id="msg-sucesso-vol" class="mensagem-sucesso"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 - Conectar & Aprender</p>
+    </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">↑</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

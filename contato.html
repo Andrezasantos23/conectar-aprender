@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar & Aprender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <h2><a href="index.html" class="logo">Conectar & Aprender</a></h2>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="index.html#cursos">Cursos</a>
+                <a href="voluntarios.html">Voluntários</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="contato.html" class="ativo">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contato-section">
+        <div class="container">
+            <h2>Entre em contato</h2>
+            <p class="subtitulo">Conte conosco! Escolha o melhor meio de contato.</p>
+
+<!--card-->
+            <div class="contato-info-grid">
+                <div class="info-card">
+                    <span class="icone">📧</span>
+                    <h3>E-mail</h3>
+                    <p>conectaraprenderoficial@gmail.com</p>
+                </div>
+                <div class="info-card">
+                    <span class="icone">📱</span>
+                    <h3>WhatsApp</h3>
+                    <p>(71) 99999-9999</p>
+                </div>
+            </div>
+
+<!--form de contato para alunos ou voluntários-->
+            <div class="form-wrapper">
+                <h3>Escreva sua dúvida</h3>
+                <form id="form-contato" class="form-contato">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required placeholder="Nome completo">
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required placeholder="joão@exemplo.com">
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensagem">Dúvida:</label>
+                        <textarea id="mensagem" rows="4" required placeholder="Explique como podemos te ajudar..."></textarea>
+                    </div>
+
+                    <button type="submit" class="botao botao-enviar">Confirmar envio</button>
+                </form>
+                <div id="mensagem-sucesso" class="mensagem-sucesso"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2026 - Conectar & Aprender</p>
+    </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">↑</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

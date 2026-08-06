@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conectar & Aprender</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!--início-->
+    <header>
+        <div class="container header-container">
+            
+            <h2><a href="index.html" class="logo">Conectar & Aprender</a></h2>
+            <nav>
+                <a href="index.html" class="ativo">Início</a>
+                <a href="#cursos">Cursos</a>
+                <a href="voluntarios.html">Voluntários</a>
+                <a href="#sobre">Sobre</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+  <!-- a ideia é deixar o texto com recuo e com um tipo de raio amarelo entre a palavra tecnologia-->
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-texto">
+                <h1>Aprenda <span class="texto-raio">tecnologia</span> gratuitamente</h1>
+                <p>
+                    Tecnologia e conhecimento ao alcance de todos, com conteúdos gratuitos e uma rede de pessoas dispostas a compartilhar e aprender juntas. 
+                </p>
+                <p>Tudo 100% EAD. Aprenda de casa!</p>
+                <a href="#cursos" class="botao">Conheça nosso conteúdo</a>
+            </div>
+
+            <div class="hero-imagem">
+                <!--optei por desenvolver a capa do site e imagens dos voluntários através do chatgpt, não quis usar imagens de pessoas reais-->
+                <img src="capa1.png" alt="capa do site">
+            </div>
+        </div>
+    </section>
+
+    <!--optei por criar cards clicáveis, entendo que entrega um design mais bonito ao site-->
+    <section id="cursos" class="secao-cursos">
+        <div class="container">
+            <h2>Navegue por nossos conteúdos</h2>
+            <div class="cards">
+                <a href="informatica-basica.html" class="card">
+                    <h3>Informática Básica</h3>
+                    <p>Perfeito pra quem está iniciando na internet.</p>
+                </a>
+
+                <a href="desenvolvimento-web.html" class="card">
+                    <h3>Desenvolvimento
+                        
+                        &
+                        
+                        Programação</h3>
+                    <p>Aprenda a programar com segurança.</p>
+                </a>
+
+                <a href="seguranca-digital.html" class="card">
+                    <h3>Segurança Digital</h3>
+                    <p>Aprenda como navegar com segurança e identificar potenciais fraudes virtuais</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--a rolagem nos comentários dos nossos clientes-->
+    <section class="feedbacks-section">
+        <div class="container">
+            <h2>O que nossos alunos estão dizendo sobre o curso</h2>
+        </div>
+
+        <div class="carrossel-container">
+            <div class="carrossel-track">
+                <div class="feedback-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Sempre tive dificuldade pra mexer na internet, meus netos já não tem mais paciência kkkk
+                        Os voluntários são atenciosos, obrigada</p>
+                    <strong>— Maria Silva, 65 anos</strong>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Consegui criar meu primeiro site, o básico usando HTML, CSS e JavaScript, com certeza vou seguir no ramo do desenvolvimento."</p>
+                    <strong>— Pedro Marques, 17 anos</strong>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Sou enfermeira, mas estou tentada a seguir na carreira tecnológica. Estou aprendendo bastante no curso. Aprendi bastante sobre golpes virtuais, principalmente o pishing, acontece quase todos os dias em meu e-mail."</p>
+                    <strong>— Denise Santos, 32 anos</strong>
+                </div>
+
+                <div class="feedback-card">
+                    <div class="estrelas">⭐⭐⭐⭐⭐</div>
+                    <p>"Sempre gostei de mexer em celular, mas ainda não tenho condição de investir, o curso abriu essas portas pra mim. É um começo para construir minha história!"</p>
+                    <strong>—  Ana Julia Lima, 15 anos</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--pequena informação sobre o projeto, optei por não deixar muito extenso-->>
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre o projeto</h2>
+            <p>
+                O Conectar & Aprender nasceu com o propósito de aproximar pessoas da tecnologia, tornando o conhecimento digital mais acessível por meio de conteúdos gratuitos, aprendizado colaborativo e apoio de voluntários. 
+            </p>
+        </div>
+    </section>
+
+<!--parte do rodape-->
+    <footer>
+        <p>2026 - Conectar & Aprender</p>
+    </footer>
+
+    <button id="btn-topo" title="Voltar ao topo">↑</button>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
