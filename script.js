@@ -2,7 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    // 1. FORMULÁRIO DE CONTATO
+    
     const formContato = document.getElementById("form-contato");
     const msgContato = document.getElementById("mensagem-sucesso");
 
@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. FORMULÁRIO DE VOLUNTÁRIOS
     const formVol = document.getElementById("form-voluntario");
     const msgVol = document.getElementById("msg-sucesso-vol");
 
@@ -30,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-// retornar ao topo
+
     const btnTopo = document.getElementById("btn-topo");
     if (btnTopo) {
         window.addEventListener("scroll", () => {
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Lógica para os formulários de agendamento de aulas
 const ativarAgendamento = (idForm, idMsg) => {
     const form = document.getElementById(idForm);
     const msg = document.getElementById(idMsg);
